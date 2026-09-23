@@ -1,4 +1,4 @@
-const REVEAL_SELECTORS = ".about-card, .card, .proj-card, .exp-row, .contact-card";
+const REVEAL_SELECTORS = ".about-card, .card, .skills-panel, .proj-card, .exp-row, .contact-card";
 
 export function initScrollAnimations() {
   const elements = document.querySelectorAll(REVEAL_SELECTORS);
