@@ -77,11 +77,11 @@
   </div>
 
   <div class="contact-links" aria-label="Contact links">
-    <a class="contact-link" href="mailto:nag4gis@gmail.com">
+    <a class="contact-link" href="mailto:nag4gis@gmail.com" data-copy="nag4gis@gmail.com" data-copy-label="Email">
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.4 2H3.6l8.4 6.3L20.4 6ZM3 7.5V18h18V7.5l-8.7 6.53a1 1 0 0 1-1.2 0L3 7.5Z"/></svg>
       <span>Email</span>
     </a>
-    <a class="contact-link" href="tel:+15715859363">
+    <a class="contact-link" href="tel:+15715859363" data-copy="(571) 585-9363" data-copy-label="Phone">
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
       <span>Phone</span>
     </a>
@@ -395,6 +395,8 @@
 </main>
 
 <footer>PROJECTED · WGS 84 · EPSG:4326 — © <span id="year">2026</span> NAG.AI</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
 <script type="module" src="scripts/main.js"></script>
 </body>

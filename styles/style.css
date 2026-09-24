@@ -755,6 +755,34 @@ footer {
 }
 
 /* =========================================================
+   Toast
+   ========================================================= */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  transform: translate(-50%, 12px);
+  z-index: 100;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--glass-strong);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--border-bright);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* =========================================================
    Scroll Reveal
    ========================================================= */
 .reveal {
