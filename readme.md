@@ -17,6 +17,7 @@ Static HTML5, CSS3, and vanilla JavaScript (ES6 modules) only — no build step,
 │   └── style.css          # single stylesheet, organized into commented sections
 ├── scripts/
 │   ├── main.js             # entry point, wires up all modules on DOMContentLoaded
+│   ├── analytics.js        # Google Analytics 4 loader
 │   └── modules/
 │       ├── footer.js       # sets the copyright year
 │       ├── theme.js        # theme switcher (aurora / frost / nebula / ember), persisted in localStorage
@@ -38,6 +39,10 @@ Hero, About Me, Expertise, Skills (tabbed by category), Featured Projects, Work 
 ## Themes
 
 Four selectable color themes (aurora, frost, nebula, ember), switched via `data-theme` on `<html>` and persisted in `localStorage`. Toggle buttons live in the nav bar.
+
+## Analytics
+
+Visitor tracking uses Google Analytics 4, loaded by `scripts/analytics.js`. The GA4 Measurement ID is set in `MEASUREMENT_ID` in that file. Tracking is skipped when the site is served from localhost. View visitor reports at https://analytics.google.com.
 
 ## Deployment
 
